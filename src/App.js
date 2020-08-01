@@ -1,11 +1,16 @@
-import React from "react";
-import "./styles.css";
+import React, { Component } from "react";
+import Component1 from "./Component1";
+// import "./styles.css";
+import "./App.css";
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Component1 />
+      </div>
+    );
+  }
 }
+
+export default App;
